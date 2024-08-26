@@ -64,7 +64,7 @@ function App() {
       role: role,
       img: img
     }
-    setEmployees(...employees, newEmployee)
+    setEmployees([...employees, newEmployee])
    }
 
   const showEmployees = true;
@@ -74,9 +74,7 @@ function App() {
       {showEmployees ? 
       <>
       <div className="flex flex-wrap justify-center">
-      {employees.map((employee) => {
-        console.log(employees)
-        const editEmployee = (
+      {employees.map((employee) => {        const editEmployee = (
           <EditEmployee 
                 id = {employee.id}
                 name={employee.name} 
