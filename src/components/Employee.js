@@ -1,6 +1,6 @@
 import EditEmployee from "./EditEmployees";
 
-function Employees(props){
+function Employee(props){
 
     return (
     <>
@@ -27,4 +27,4 @@ function Employees(props){
     )
 }
 
-export default Employees;
+export default Employee;
